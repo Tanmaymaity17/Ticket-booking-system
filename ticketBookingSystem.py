@@ -6,7 +6,7 @@ from subprocess import call
 from PIL import Image, ImageTk
 
 # Initialize Firebase
-cred = credentials.Certificate("python-ticket-booking-firebase-adminsdk-98868-53d95a9868.json")
+cred = credentials.Certificate("python-ticket-booking-firebase.json")
 initialize_app(cred, {"databaseURL": "https://python-ticket-booking-default-rtdb.firebaseio.com/"})
 database_ref = db.reference("/users")
 
